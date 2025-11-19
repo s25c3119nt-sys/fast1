@@ -8,7 +8,6 @@ clicked = [
     [False, False, False, False, False]
 ]
 
-colors = [10, 40, 80, 140, 200]
 
 CELL = 80
 N = 5
@@ -21,7 +20,7 @@ def draw():
             y = CELL * i
 
             if clicked[i][j]:
-                Rectangle(x, y, CELL, CELL).fill(color(colors[i], 99, 99))
+                Rectangle(x, y, CELL, CELL).fill('red')
             else:
                 Rectangle(x, y, CELL, CELL).fill("white")
         mousereleased()
